@@ -16,6 +16,7 @@
 		61D6EFA3201766990002C97C /* GridProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D6EFA2201766990002C97C /* GridProjectUITests.swift */; };
 		61D6EFB1201766D30002C97C /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D6EFB0201766D30002C97C /* GridView.swift */; };
 		61D6EFB320178A460002C97C /* PointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D6EFB220178A460002C97C /* PointView.swift */; };
+		61D6EFB520179EA30002C97C /* CirclesGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D6EFB420179EA30002C97C /* CirclesGridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		61D6EFA4201766990002C97C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61D6EFB0201766D30002C97C /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		61D6EFB220178A460002C97C /* PointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointView.swift; sourceTree = "<group>"; };
+		61D6EFB420179EA30002C97C /* CirclesGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirclesGridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				61D6EF82201766990002C97C /* AppDelegate.swift */,
 				61D6EF84201766990002C97C /* ViewController.swift */,
 				61D6EFB0201766D30002C97C /* GridView.swift */,
+				61D6EFB420179EA30002C97C /* CirclesGridView.swift */,
 				61D6EFB220178A460002C97C /* PointView.swift */,
 				61D6EF86201766990002C97C /* Main.storyboard */,
 				61D6EF89201766990002C97C /* Assets.xcassets */,
@@ -267,6 +270,7 @@
 			files = (
 				61D6EF85201766990002C97C /* ViewController.swift in Sources */,
 				61D6EFB1201766D30002C97C /* GridView.swift in Sources */,
+				61D6EFB520179EA30002C97C /* CirclesGridView.swift in Sources */,
 				61D6EF83201766990002C97C /* AppDelegate.swift in Sources */,
 				61D6EFB320178A460002C97C /* PointView.swift in Sources */,
 			);

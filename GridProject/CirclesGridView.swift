@@ -1,5 +1,5 @@
 //
-//  PointView.swift
+//  CirclesGridView.swift
 //  GridProject
 //
 //  Created by Diaa Alwakil on 2018-01-23.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PointView: UIView {
+class CirclesGridView: UIView {
 
     var selectedLocation:CGPoint?
     
@@ -20,18 +20,33 @@ class PointView: UIView {
             return
         }
         
-        context.setLineWidth(1)
-        context.setStrokeColor(UIColor.red.cgColor)
         
-       let hline = Line(start: CGPoint(x: 0, y: selectedLocation.y), end: CGPoint(x: rect.size.width , y: selectedLocation.y))
-      context.draw(line: hline)
-      
+        //Draw Circular grid
+        
+        context.setLineWidth(0.7)
+        context.setStrokeColor(UIColor.lightGray.cgColor)
+        let maxSide = max(rect.size.width, rect.size.height)
+        
+        _ = stride(from: 0, to: maxSide, by: 5).flatMap {
+            
+            context.addArc(center: selectedLocation, radius: $0, startAngle: 0, endAngle: 2*CGFloat.pi, clockwise: false)
+        }
+        
+        context.strokePath()
+        
+        //Draw Horizontal and vertical lines at the point
+        
+        context.setStrokeColor(UIColor.red.cgColor)
+
+        let hline = Line(start: CGPoint(x: 0, y: selectedLocation.y), end: CGPoint(x: rect.size.width , y: selectedLocation.y))
+        context.draw(line: hline)
+        
         let vline = Line(start: CGPoint(x: selectedLocation.x, y: 0), end: CGPoint(x: selectedLocation.x , y: rect.size.height))
         context.draw(line: vline)
         
         context.strokePath()
     }
-
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let touch = touches.first
             else { return }
@@ -40,11 +55,8 @@ class PointView: UIView {
         self.selectedLocation = point
         
         self.setNeedsDisplay()
-        
-        
-   //     print(type(of: self.next?.next))
-    }
-
+        }
+    
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let touch = touches.first
             else { return }
@@ -53,11 +65,10 @@ class PointView: UIView {
         self.selectedLocation = point
         
         self.setNeedsDisplay()
-        super.touchesMoved(touches, with: event)
-        
-        self.next?.next?.touchesMoved(touches, with: event)
-        
     }
     
-
+    
 }
+
+// context.addArc(center: selectedLocation, radius: $0, startAngle: 0, endAngle: 2*CGFloat.pi - 1, clockwise: true)
+
