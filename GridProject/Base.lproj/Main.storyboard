@@ -22,13 +22,21 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CeW-wr-lcl" customClass="PointView" customModule="GridProject" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="FtS-LD-0hi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="7Pv-mH-gnE"/>
+                            <constraint firstItem="CeW-wr-lcl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PSF-u3-gmy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FtS-LD-0hi" secondAttribute="trailing" id="WpH-mV-eTP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CeW-wr-lcl" secondAttribute="trailing" id="XA2-ZT-fpi"/>
                             <constraint firstItem="FtS-LD-0hi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jCP-3b-3j6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CeW-wr-lcl" secondAttribute="bottom" id="lYU-OM-1H0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FtS-LD-0hi" secondAttribute="bottom" id="oOj-As-ct4"/>
+                            <constraint firstItem="CeW-wr-lcl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="snu-2a-07j"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
