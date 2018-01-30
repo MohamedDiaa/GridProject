@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61CCCEF120206B080070988C /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CCCEEF20206B080070988C /* GridViewController.swift */; };
+		61CCCEF220206B080070988C /* GridViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61CCCEF020206B080070988C /* GridViewController.xib */; };
+		61CCCEF720206E820070988C /* CircleGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CCCEF520206E820070988C /* CircleGridViewController.swift */; };
+		61CCCEF820206E820070988C /* CircleGridViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61CCCEF620206E820070988C /* CircleGridViewController.xib */; };
+		61CCCEFC20206EB90070988C /* PointMarkerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CCCEFA20206EB90070988C /* PointMarkerViewController.swift */; };
+		61CCCEFD20206EB90070988C /* PointMarkerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61CCCEFB20206EB90070988C /* PointMarkerViewController.xib */; };
 		61D6EF83201766990002C97C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D6EF82201766990002C97C /* AppDelegate.swift */; };
 		61D6EF85201766990002C97C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D6EF84201766990002C97C /* ViewController.swift */; };
 		61D6EF88201766990002C97C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61D6EF86201766990002C97C /* Main.storyboard */; };
@@ -37,6 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		61CCCEEF20206B080070988C /* GridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewController.swift; sourceTree = "<group>"; };
+		61CCCEF020206B080070988C /* GridViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GridViewController.xib; sourceTree = "<group>"; };
+		61CCCEF520206E820070988C /* CircleGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleGridViewController.swift; sourceTree = "<group>"; };
+		61CCCEF620206E820070988C /* CircleGridViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CircleGridViewController.xib; sourceTree = "<group>"; };
+		61CCCEFA20206EB90070988C /* PointMarkerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointMarkerViewController.swift; sourceTree = "<group>"; };
+		61CCCEFB20206EB90070988C /* PointMarkerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PointMarkerViewController.xib; sourceTree = "<group>"; };
 		61D6EF7F201766990002C97C /* GridProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GridProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61D6EF82201766990002C97C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61D6EF84201766990002C97C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +92,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		61CCCEEE20206AF00070988C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				61CCCEF920206EA00070988C /* Point Marker */,
+				61CCCEF420206B3F0070988C /* Circle Grid */,
+				61CCCEF320206B300070988C /* Grid */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		61CCCEF320206B300070988C /* Grid */ = {
+			isa = PBXGroup;
+			children = (
+				61D6EFB0201766D30002C97C /* GridView.swift */,
+				61CCCEEF20206B080070988C /* GridViewController.swift */,
+				61CCCEF020206B080070988C /* GridViewController.xib */,
+			);
+			name = Grid;
+			sourceTree = "<group>";
+		};
+		61CCCEF420206B3F0070988C /* Circle Grid */ = {
+			isa = PBXGroup;
+			children = (
+				61D6EFB420179EA30002C97C /* CirclesGridView.swift */,
+				61CCCEF520206E820070988C /* CircleGridViewController.swift */,
+				61CCCEF620206E820070988C /* CircleGridViewController.xib */,
+			);
+			path = "Circle Grid";
+			sourceTree = "<group>";
+		};
+		61CCCEF920206EA00070988C /* Point Marker */ = {
+			isa = PBXGroup;
+			children = (
+				61D6EFB220178A460002C97C /* PointView.swift */,
+				61CCCEFA20206EB90070988C /* PointMarkerViewController.swift */,
+				61CCCEFB20206EB90070988C /* PointMarkerViewController.xib */,
+			);
+			name = "Point Marker";
+			sourceTree = "<group>";
+		};
 		61D6EF76201766990002C97C = {
 			isa = PBXGroup;
 			children = (
@@ -105,13 +157,11 @@
 			children = (
 				61D6EF82201766990002C97C /* AppDelegate.swift */,
 				61D6EF84201766990002C97C /* ViewController.swift */,
-				61D6EFB0201766D30002C97C /* GridView.swift */,
-				61D6EFB420179EA30002C97C /* CirclesGridView.swift */,
-				61D6EFB220178A460002C97C /* PointView.swift */,
 				61D6EF86201766990002C97C /* Main.storyboard */,
 				61D6EF89201766990002C97C /* Assets.xcassets */,
 				61D6EF8B201766990002C97C /* LaunchScreen.storyboard */,
 				61D6EF8E201766990002C97C /* Info.plist */,
+				61CCCEEE20206AF00070988C /* Controllers */,
 			);
 			path = GridProject;
 			sourceTree = "<group>";
@@ -241,7 +291,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61CCCEF220206B080070988C /* GridViewController.xib in Resources */,
 				61D6EF8D201766990002C97C /* LaunchScreen.storyboard in Resources */,
+				61CCCEF820206E820070988C /* CircleGridViewController.xib in Resources */,
+				61CCCEFD20206EB90070988C /* PointMarkerViewController.xib in Resources */,
 				61D6EF8A201766990002C97C /* Assets.xcassets in Resources */,
 				61D6EF88201766990002C97C /* Main.storyboard in Resources */,
 			);
@@ -270,8 +323,11 @@
 			files = (
 				61D6EF85201766990002C97C /* ViewController.swift in Sources */,
 				61D6EFB1201766D30002C97C /* GridView.swift in Sources */,
+				61CCCEF120206B080070988C /* GridViewController.swift in Sources */,
 				61D6EFB520179EA30002C97C /* CirclesGridView.swift in Sources */,
 				61D6EF83201766990002C97C /* AppDelegate.swift in Sources */,
+				61CCCEFC20206EB90070988C /* PointMarkerViewController.swift in Sources */,
+				61CCCEF720206E820070988C /* CircleGridViewController.swift in Sources */,
 				61D6EFB320178A460002C97C /* PointView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
