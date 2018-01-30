@@ -22,24 +22,25 @@ class GridView: UIView {
         // Drawing code
     }
     */
-    let numberOfLines:CGFloat = 100
+   // let numberOfLines:CGFloat = 100
     override func draw(_ rect: CGRect) {
 
+        
         //Get graphics context
         guard let context = UIGraphicsGetCurrentContext()
             else { return }
         
         context.setStrokeColor(UIColor.lightGray.cgColor)
-        context.setLineWidth(0.2)
+        context.setLineWidth(1)
 
-        _ = stride(from: 0, to: rect.size.width, by: rect.size.width/numberOfLines).flatMap{
+        _ = stride(from: 0, to: rect.size.width, by: 10).flatMap{
             xOffset in
             
             let line = Line(start: CGPoint(x: xOffset, y: 0), end: CGPoint(x: xOffset, y: rect.size.height))
             context.draw(line: line)
         }
         
-        _ = stride(from: 0, to: rect.size.height, by: rect.size.height/numberOfLines).flatMap{
+        _ = stride(from: 0, to: rect.size.height, by: 10).flatMap{
             yOffset in
             
             let line = Line(start: CGPoint(x: 0, y: yOffset), end: CGPoint(x: rect.size.width, y: yOffset))

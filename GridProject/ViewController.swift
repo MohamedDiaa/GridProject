@@ -16,17 +16,18 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.pageController.view.frame = self.view.bounds
+        self.addChildViewController(pageController)
+        self.view.addSubview(pageController.view)
+        self.pageController.dataSource = self
+        vcs[0].view.frame = pageController.view.bounds
+        self.pageController.setViewControllers([vcs[0]], direction: .forward, animated: false, completion: nil)
         
      
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        self.pageController.view.frame = self.view.bounds
-        self.addChildViewController(pageController)
-        self.view.addSubview(pageController.view)
-        self.pageController.dataSource = self
-        self.pageController.setViewControllers([vcs[0]], direction: .forward, animated: false, completion: nil)
-        
+
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

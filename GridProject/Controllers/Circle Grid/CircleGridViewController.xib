@@ -19,7 +19,27 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="CirclesGridView" customModule="GridProject" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Circle Grid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buV-Fg-Fkw">
+                    <rect key="frame" x="145" y="25" width="84.5" height="21"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press any where" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXa-YB-6Je">
+                    <rect key="frame" x="125" y="641" width="124" height="21"/>
+                    <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="jXa-YB-6Je" secondAttribute="bottom" constant="5" id="L4e-Nf-dGQ"/>
+                <constraint firstItem="buV-Fg-Fkw" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="lhI-DW-8sd"/>
+                <constraint firstItem="buV-Fg-Fkw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="5" id="pPS-Bk-2cR"/>
+                <constraint firstItem="jXa-YB-6Je" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="pzf-O2-7wO"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
     </objects>
